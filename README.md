@@ -63,6 +63,16 @@
 - все буквы в фамилии и имени из верхнего регистра переведите в нижний регистр,
 - замените буквы 'll' в именах на 'pp'.
 
+- SELECT
+-    LOWER(REPLACE(REPLACE(first_name, 'll', 'pp'), 'Kelly', 'kelly')) AS modified_first_name,
+-    LOWER(last_name) AS modified_last_name
+- FROM customer
+- WHERE active = 1
+-  AND first_name IN ('Kelly', 'Willie');
+
+![image](https://github.com/user-attachments/assets/d6fd2233-163c-42be-bf17-6701113b241b)
+
+
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
 
