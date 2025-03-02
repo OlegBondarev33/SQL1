@@ -42,6 +42,14 @@
 
 ![image](https://github.com/user-attachments/assets/6055c401-6b6e-42d4-b9a2-65eab5667c93)
 
+- SELECT *
+- FROM payment
+- WHERE payment_date >= '2005-06-15'
+-  AND payment_date <= '2005-06-18'
+-  AND amount > 10.00;
+
+![image](https://github.com/user-attachments/assets/20a7387a-2713-4c4e-8889-92562277f8e8)
+
 
 ### Задание 3
 
