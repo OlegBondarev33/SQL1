@@ -35,9 +35,25 @@
 
 Получите из таблицы платежей за прокат фильмов информацию по платежам, которые выполнялись в промежуток с 15 июня 2005 года по 18 июня 2005 года **включительно** и стоимость которых превышает 10.00.
 
+- SELECT *
+- FROM payment
+- WHERE payment_date BETWEEN '2005-06-15' AND '2005-06-18'
+- AND amount > 10.00;
+
+![image](https://github.com/user-attachments/assets/6055c401-6b6e-42d4-b9a2-65eab5667c93)
+
+
 ### Задание 3
 
 Получите последние пять аренд фильмов.
+
+- SELECT *
+- FROM rental
+- ORDER BY rental_date DESC
+- LIMIT 5;
+
+![image](https://github.com/user-attachments/assets/dbb30e4b-c36b-4858-96f5-7998ccdd0f0a)
+
 
 ### Задание 4
 
